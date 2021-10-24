@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Calcular
+    </h1>
+    Velocida<input type="number" name="Velocidade" id="velocidade">
+    <input type="button" value="Calcular" onclick="Cacular()">
+    <div id="resultado">
+
+    </div>
+
+
+    <script>
+        function Calcular(){
+            var velelocidade= document.getElementById('velocidade')
+            var resultado= document.getElementById('resultado')
+            var ver= Number(velocidade.value)
+            resultado.innerHTML= ` A sua velocidade é de ${ver}`
+            if (ver < 100) {resultado.innerHTML +=`Dirija com seguraça`
+                
+            } else if{  ver > 100 resultado.innerHTML += `Você esta multado``
+
+            }
+            
+        }
+    </script>
+</body>
+</html>

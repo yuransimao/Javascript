@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+</head>
+<body>
+    <h1>Sistema</h1>
+    <input type="number" name="vel" id="vel"> km/h 
+    <input type="button" value="verificar" onclick="calcular"> 
+    <div id="resultado">
+
+    </div>
+
+
+<script>
+    function calcular(){
+        var vel= document.getElementById('vel')
+        var resultado= document.getElementById('resultado')
+        var txvel= Namber('vel.value')
+        resultado.innerHTML=`A sua velocidade á atual é de ${vel}`
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Região</title>
+</head>
+<body>
+    <h1>Local</h1>
+    Pais:<input type="text" name="Pis" id="Pais">
+    <input type="button" value="Localização" onclick="localizar()">
+    <div id="Região">
+        
+    </div>
+    
+
+    <script>
+        function localizar(){
+            var Pais= document.getElementById('Pais')
+            var Região= document.getElementById('Região')
+            var local= String(Pais.value)
+            Região.innerHTML=`A sua localizão é em <strong>${local}</strong>`
+            
+            if (local=='Angola') { 
+                Região.innerHTML += ` . Seja Bem-Vindo`
+               
+            } else{
+                Região.innerHTML +=` .Bem-Vindo ao nosso pais`
+            }
+
+        }
+    </script>
+</body>
+</html>

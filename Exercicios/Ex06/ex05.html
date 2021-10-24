@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=d, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    #area{
+        background: aqua;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 18px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <div id="area" onclick="click" onmouseenter="entra">interaja</div>
+    
+    <script>
+        var a= window.document.getElementById('area')
+        function click(){ 
+a.innerText='clicou'}
+
+function entra() {
+a.innerText= 'entrou'
+    
+}
+
+
+    </script>
+</body>
+</html>
